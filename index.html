@@ -1,0 +1,2384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rhino Roofing Contractors</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23d97706'/><text x='50' y='68' font-size='60' fill='white' text-anchor='middle' font-family='Arial,sans-serif' font-weight='bold'>R</text></svg>">
+    
+    <!-- OG Meta Tags -->
+    <meta property="og:title" content="Rhino Roofing Contractors">
+    <meta property="og:description" content="Premium commercial roofing contractors with over three decades of expertise, reliability, and exceptional craftsmanship.">
+    <meta property="og:image" content="./image-1.jpg">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        /* CSS Variables & Reset */
+        :root {
+            --col-base: hsl(220, 15%, 8%);
+            --col-surface: hsl(220, 15%, 12%);
+            --col-surface-light: hsl(220, 15%, 18%);
+            --col-primary: hsl(40, 90%, 55%); /* Construction Gold */
+            --col-primary-hover: hsl(40, 90%, 45%);
+            --col-text: hsl(0, 0%, 98%);
+            --col-text-muted: hsl(220, 10%, 65%);
+            
+            --font-heading: 'Playfair Display', serif;
+            --font-body: 'Inter', sans-serif;
+            
+            --radius-sm: 12px;
+            --radius-md: 24px;
+            --radius-lg: 32px;
+            
+            --glass-bg: rgba(255, 255, 255, 0.03);
+            --glass-border: 1px solid rgba(255, 255, 255, 0.08);
+            --glass-blur: blur(20px);
+            
+            --shadow-glow: 0 10px 40px -10px rgba(217, 119, 6, 0.3);
+            --shadow-soft: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            background-color: var(--col-base);
+            color: var(--col-text);
+            font-family: var(--font-body);
+            overflow-x: hidden;
+        }
+
+        body {
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Typography */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-heading);
+            font-weight: 700;
+            line-height: 1.1;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            line-height: 1.7;
+            color: var(--col-text-muted);
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+
+        .eyebrow {
+            font-family: var(--font-body);
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            font-size: 0.85rem;
+            color: var(--col-primary);
+            font-weight: 600;
+            display: block;
+            margin-bottom: 1rem;
+        }
+
+        /* Layout & Spacing */
+        section {
+            padding: clamp(6rem, 12vh, 10rem) 5%;
+            position: relative;
+            z-index: 1;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.75rem;
+            padding: 1.2rem 2.5rem;
+            border-radius: 999px;
+            font-family: var(--font-body);
+            font-weight: 600;
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            border: none;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-primary {
+            background: var(--col-primary);
+            color: var(--col-base);
+            box-shadow: var(--shadow-glow);
+        }
+
+        .btn-primary:hover {
+            background: var(--col-primary-hover);
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 15px 50px -10px rgba(217, 119, 6, 0.5);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--col-text);
+            border: 1px solid rgba(255,255,255,0.2);
+            backdrop-filter: blur(10px);
+        }
+
+        .btn-outline:hover {
+            background: rgba(255,255,255,0.1);
+            border-color: rgba(255,255,255,0.4);
+            transform: translateY(-3px);
+        }
+
+        /* Preloader */
+        #preloader {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: var(--col-base);
+            z-index: 99999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: opacity 0.8s ease, visibility 0.8s ease;
+        }
+        .preloader-text {
+            font-family: var(--font-heading);
+            font-size: clamp(1.5rem, 5vw, 3.5rem);
+            color: var(--col-primary);
+            padding: 0 2rem;
+            text-align: center;
+            word-break: break-word;
+            max-width: 90vw;
+            animation: pulse 2s infinite;
+        }
+
+        /* Header / Nav */
+        header {
+            position: fixed;
+            top: 0; left: 0; width: 100%;
+            padding: 1.5rem 5%;
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: transparent;
+            transition: all 0.4s ease;
+        }
+        header.scrolled {
+            background: rgba(15, 17, 21, 0.85);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            padding: 1rem 5%;
+        }
+
+        .logo {
+            font-family: var(--font-heading);
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: var(--col-text);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        .logo span { color: var(--col-primary); }
+
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            align-items: center;
+        }
+        .nav-links a {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-weight: 500;
+            white-space: nowrap;
+            position: relative;
+        }
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px; left: 0; width: 0; height: 2px;
+            background: var(--col-primary);
+            transition: width 0.3s ease;
+        }
+        .nav-links a:hover::after { width: 100%; }
+
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .status-badge {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(255,255,255,0.05);
+            padding: 6px 14px;
+            border-radius: 999px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        .status-dot {
+            width: 8px; height: 8px;
+            border-radius: 50%;
+        }
+        .status-open .status-dot { background: #10b981; box-shadow: 0 0 10px #10b981; animation: pulse 2s infinite; }
+        .status-open .status-text { color: #10b981; }
+        .status-closed .status-dot { background: #ef4444; }
+        .status-closed .status-text { color: #ef4444; }
+
+        .hamburger {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 28px;
+            cursor: pointer;
+            z-index: 201;
+        }
+
+        /* Mobile Menu */
+        .mobile-menu {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(10, 12, 16, 0.98);
+            backdrop-filter: blur(20px);
+            z-index: 200;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            transform: translateX(100%);
+            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .mobile-menu.active { transform: translateX(0); }
+        .mobile-menu a {
+            color: white;
+            font-size: 2rem;
+            font-family: var(--font-heading);
+            text-decoration: none;
+            display: block;
+            padding: 0.5rem;
+        }
+        .mobile-menu-close {
+            position: absolute;
+            top: 2rem; right: 2rem;
+            background: none; border: none;
+            color: white; font-size: 32px;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            gap: 4rem;
+            padding-top: 120px;
+        }
+        .hero-content {
+            z-index: 10;
+            padding-right: 2rem;
+        }
+        .hero h1 {
+            font-size: clamp(3rem, 6vw, 5.5rem);
+            margin-bottom: 1.5rem;
+            opacity: 0;
+            animation: heroReveal 1s cubic-bezier(0.2, 0.8, 0.2, 1) 0.2s forwards;
+        }
+        .hero p {
+            font-size: clamp(1.1rem, 2vw, 1.3rem);
+            max-width: 90%;
+            opacity: 0;
+            animation: heroReveal 1s cubic-bezier(0.2, 0.8, 0.2, 1) 0.4s forwards;
+        }
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2.5rem;
+            opacity: 0;
+            animation: heroReveal 1s cubic-bezier(0.2, 0.8, 0.2, 1) 0.6s forwards;
+        }
+        .hero-image-wrapper {
+            height: 75vh;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            position: relative;
+            box-shadow: var(--shadow-soft);
+            opacity: 0;
+            animation: heroReveal 1s cubic-bezier(0.2, 0.8, 0.2, 1) 0.4s forwards;
+            transform: translateY(0px);
+        }
+        .hero-image-wrapper::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: var(--radius-lg);
+            box-shadow: inset 0 0 0 1px rgba(255,255,255,0.1);
+            pointer-events: none;
+        }
+        .hero-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            animation: kenburns 20s ease-out infinite alternate;
+        }
+
+        /* Sticky Sidebar */
+        .sticky-sidebar {
+            position: fixed;
+            right: 2rem;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            z-index: 90;
+            background: var(--glass-bg);
+            backdrop-filter: var(--glass-blur);
+            padding: 1.5rem 1rem;
+            border-radius: 999px;
+            border: var(--glass-border);
+        }
+        .sticky-sidebar a {
+            color: white;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px; height: 40px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.05);
+            transition: all 0.3s ease;
+        }
+        .sticky-sidebar a:hover {
+            background: var(--col-primary);
+            color: var(--col-base);
+            transform: scale(1.1);
+        }
+
+        /* Scrolling Marquee */
+        .marquee-wrapper {
+            background: var(--col-primary);
+            padding: 1.5rem 0;
+            overflow: hidden;
+            display: flex;
+            white-space: nowrap;
+            transform: rotate(-2deg) scale(1.05);
+            margin: 4rem 0;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+            position: relative;
+            z-index: 2;
+        }
+        .marquee-content {
+            display: flex;
+            animation: marquee 20s linear infinite;
+        }
+        .marquee-item {
+            font-family: var(--font-heading);
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--col-base);
+            text-transform: uppercase;
+            padding: 0 2rem;
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+        .marquee-item i { font-size: 1rem; }
+
+        /* About Section */
+        .about {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 6rem;
+            align-items: center;
+        }
+        .about-image {
+            position: relative;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            animation: float 6s ease-in-out infinite;
+            box-shadow: var(--shadow-soft);
+        }
+        .about-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            aspect-ratio: 4/5;
+        }
+        .about-image::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border: 1px solid rgba(255,255,255,0.2);
+            border-radius: var(--radius-lg);
+            margin: 1rem;
+            pointer-events: none;
+            z-index: 2;
+        }
+        .about-content h2 { font-size: clamp(2.5rem, 5vw, 4rem); }
+
+        /* Stats Section */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            margin-top: 4rem;
+            padding: 4rem;
+            background: var(--col-surface);
+            border-radius: var(--radius-lg);
+            border: var(--glass-border);
+        }
+        .stat-card {
+            text-align: center;
+        }
+        .stat-card i {
+            font-size: 2.5rem;
+            color: var(--col-primary);
+            margin-bottom: 1rem;
+        }
+        .stat-number {
+            font-family: var(--font-heading);
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: var(--col-text);
+            margin-bottom: 0.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .stat-label {
+            font-size: 1rem;
+            color: var(--col-text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        /* Why Choose Us */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 4rem;
+        }
+        .feature-card {
+            background: var(--glass-bg);
+            backdrop-filter: var(--glass-blur);
+            border: var(--glass-border);
+            padding: 3rem 2rem;
+            border-radius: var(--radius-md);
+            transition: transform 0.4s ease, background 0.4s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-10px);
+            background: rgba(255,255,255,0.05);
+            border-color: rgba(217, 119, 6, 0.3);
+        }
+        .feature-icon {
+            width: 70px; height: 70px;
+            background: rgba(217, 119, 6, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: var(--col-primary);
+            margin-bottom: 2rem;
+        }
+        .feature-card h3 { font-size: 1.5rem; margin-bottom: 1rem; }
+
+        /* Services */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            margin-top: 4rem;
+        }
+        .service-card {
+            position: relative;
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            padding: 4rem 3rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            min-height: 400px;
+            background: var(--col-surface);
+            border: var(--glass-border);
+            transition: all 0.4s ease;
+        }
+        .service-card::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(15,17,21,1) 0%, rgba(15,17,21,0.2) 100%);
+            z-index: 1;
+        }
+        .service-bg {
+            position: absolute;
+            inset: 0;
+            width: 100%; height: 100%;
+            object-fit: cover;
+            opacity: 0.4;
+            transition: transform 0.7s ease, opacity 0.4s ease;
+        }
+        .service-card:hover .service-bg {
+            transform: scale(1.1);
+            opacity: 0.6;
+        }
+        .service-card:hover {
+            border-color: var(--col-primary);
+            box-shadow: 0 10px 30px rgba(217, 119, 6, 0.15);
+        }
+        .service-content {
+            position: relative;
+            z-index: 2;
+        }
+        .service-content h3 { font-size: 2rem; margin-bottom: 0.5rem; }
+        .service-content p { margin-bottom: 1.5rem; color: #ccc; }
+        .service-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--col-primary);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-size: 0.9rem;
+        }
+        .service-link i { transition: transform 0.3s ease; }
+        .service-card:hover .service-link i { transform: translateX(5px); }
+
+        /* Pricing / Menu */
+        .pricing-section {
+            background: var(--col-surface);
+        }
+        .pricing-container {
+            max-width: 900px;
+            margin: 4rem auto 0;
+            background: var(--glass-bg);
+            border: var(--glass-border);
+            border-radius: var(--radius-lg);
+            padding: 4rem;
+        }
+        .pricing-item {
+            display: flex;
+            align-items: baseline;
+            margin-bottom: 2rem;
+        }
+        .pricing-name {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+        .pricing-dots {
+            flex-grow: 1;
+            border-bottom: 2px dotted rgba(255,255,255,0.2);
+            margin: 0 1rem;
+            position: relative;
+            top: -6px;
+        }
+        .pricing-price {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--col-primary);
+        }
+        .pricing-desc {
+            font-size: 0.95rem;
+            color: var(--col-text-muted);
+            margin-top: -1.5rem;
+            margin-bottom: 2rem;
+            padding-right: 100px;
+        }
+
+        /* Newsletter */
+        .newsletter {
+            text-align: center;
+            padding: 6rem 5%;
+            background: linear-gradient(45deg, var(--col-surface), var(--col-base));
+            border-top: 1px solid rgba(255,255,255,0.05);
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+        .newsletter-form {
+            max-width: 500px;
+            margin: 2rem auto 0;
+            display: flex;
+            gap: 1rem;
+        }
+        .newsletter-input {
+            flex-grow: 1;
+            padding: 1rem 1.5rem;
+            border-radius: 999px;
+            border: 1px solid rgba(255,255,255,0.2);
+            background: rgba(0,0,0,0.2);
+            color: white;
+            font-family: var(--font-body);
+            font-size: 1rem;
+            outline: none;
+            transition: border-color 0.3s ease;
+        }
+        .newsletter-input:focus { border-color: var(--col-primary); }
+
+        /* Team */
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 4rem;
+        }
+        .team-card {
+            background: var(--col-surface);
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            border: var(--glass-border);
+            text-align: center;
+            padding-bottom: 2rem;
+        }
+        .team-img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        .team-info { padding: 2rem 1.5rem; }
+        .team-name { font-size: 1.8rem; margin-bottom: 0.5rem; }
+        .team-role { color: var(--col-primary); font-weight: 600; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 0.1em; margin-bottom: 1.5rem; }
+
+        /* Instagram Feed */
+        .social-section { text-align: center; }
+        .social-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 1rem;
+            margin-top: 3rem;
+        }
+        .social-item {
+            position: relative;
+            aspect-ratio: 1/1;
+            border-radius: var(--radius-sm);
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .social-item img {
+            width: 100%; height: 100%; object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        .social-overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(0,0,0,0.6);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .social-item:hover img { transform: scale(1.1); }
+        .social-item:hover .social-overlay { opacity: 1; }
+        .social-overlay span {
+            color: white; font-weight: 600; font-size: 1.2rem;
+            display: flex; align-items: center; gap: 0.5rem;
+        }
+
+        /* Luxury Photo Gallery (Bento Box) */
+        .gallery-section { background: var(--col-surface); }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 300px 300px;
+            gap: 1.5rem;
+            margin-top: 4rem;
+        }
+        .bento-item {
+            position: relative;
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            border: var(--glass-border);
+        }
+        .bento-item img {
+            width: 100%; height: 100%; object-fit: cover;
+            transition: transform 0.7s ease, filter 0.7s ease;
+            filter: grayscale(40%);
+        }
+        .bento-item:hover img {
+            transform: scale(1.05);
+            filter: grayscale(0%);
+        }
+        .bento-item::after {
+            content: ''; position: absolute; inset: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.5), transparent);
+            opacity: 0; transition: opacity 0.4s ease;
+        }
+        .bento-item:hover::after { opacity: 1; }
+        
+        /* Asymmetric spans */
+        .bento-1 { grid-column: span 2; grid-row: span 2; }
+        .bento-2 { grid-column: span 1; grid-row: span 1; }
+        .bento-3 { grid-column: span 1; grid-row: span 2; }
+        .bento-4 { grid-column: span 1; grid-row: span 1; }
+        .bento-5 { grid-column: span 1; grid-row: span 1; }
+        .bento-6 { grid-column: span 2; grid-row: span 1; }
+        .bento-7 { grid-column: span 1; grid-row: span 1; }
+        .bento-8 { grid-column: span 1; grid-row: span 1; }
+
+        /* Before & After Spotlight */
+        .spotlight {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            background: var(--col-base);
+        }
+        .ba-container {
+            position: relative;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-soft);
+            border: var(--glass-border);
+        }
+        .ba-container img { width: 100%; aspect-ratio: 4/3; object-fit: cover; }
+        .ba-label {
+            position: absolute;
+            top: 1rem; left: 1rem;
+            background: rgba(0,0,0,0.7);
+            backdrop-filter: blur(10px);
+            padding: 0.5rem 1rem;
+            border-radius: 999px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        /* Map & Hours */
+        .location-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+        }
+        .map-container {
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            border: var(--glass-border);
+            height: 100%;
+            min-height: 400px;
+        }
+        .hours-card {
+            background: var(--glass-bg);
+            backdrop-filter: var(--glass-blur);
+            border: var(--glass-border);
+            padding: 4rem;
+            border-radius: var(--radius-lg);
+        }
+        .hours-list { list-style: none; margin-top: 2rem; }
+        .hours-list li {
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem 0;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            font-size: 1.1rem;
+        }
+        .hours-list li:last-child { border-bottom: none; }
+        .day { font-weight: 600; color: var(--col-text); }
+        .time { color: var(--col-text-muted); }
+
+        /* Reviews */
+        .reviews-section { background: var(--col-surface); text-align: center; }
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 4rem;
+            text-align: left;
+        }
+        .review-card {
+            background: var(--col-base);
+            padding: 3rem 2rem;
+            border-radius: var(--radius-md);
+            border: var(--glass-border);
+            position: relative;
+        }
+        .review-card::before {
+            content: '\201C';
+            position: absolute;
+            top: 1rem; right: 2rem;
+            font-family: var(--font-heading);
+            font-size: 6rem;
+            color: rgba(255,255,255,0.05);
+            line-height: 1;
+        }
+        .stars { color: gold; margin-bottom: 1.5rem; font-size: 1.2rem; }
+        .review-text { font-style: italic; margin-bottom: 2rem; }
+        .reviewer-name { font-weight: 700; font-family: var(--font-heading); font-size: 1.2rem; }
+        .review-cta { margin-top: 4rem; }
+
+        /* FAQ */
+        .faq-container { max-width: 800px; margin: 4rem auto 0; }
+        .faq-item {
+            background: var(--glass-bg);
+            border: var(--glass-border);
+            border-radius: var(--radius-sm);
+            margin-bottom: 1rem;
+            overflow: hidden;
+        }
+        .faq-question {
+            width: 100%;
+            text-align: left;
+            padding: 1.5rem 2rem;
+            background: none;
+            border: none;
+            color: var(--col-text);
+            font-family: var(--font-heading);
+            font-size: 1.3rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .faq-question i { transition: transform 0.3s ease; color: var(--col-primary); }
+        .faq-item.active .faq-question i { transform: rotate(180deg); }
+        .faq-answer {
+            padding: 0 2rem;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, padding 0.4s ease;
+            color: var(--col-text-muted);
+        }
+        .faq-item.active .faq-answer {
+            padding: 0 2rem 1.5rem;
+            max-height: 500px;
+        }
+
+        /* Final CTA Banner */
+        .final-cta {
+            padding: 8rem 5%;
+            text-align: center;
+            position: relative;
+            background: url('./image-1.jpg') center/cover no-repeat;
+            border-radius: var(--radius-lg);
+            margin: 0 2rem 4rem;
+            overflow: hidden;
+        }
+        .final-cta::before {
+            content: ''; position: absolute; inset: 0;
+            background: rgba(15, 17, 21, 0.85);
+            backdrop-filter: blur(5px);
+        }
+        .final-cta-content { position: relative; z-index: 2; max-width: 800px; margin: 0 auto; }
+        .final-cta h2 { font-size: clamp(3rem, 6vw, 5rem); margin-bottom: 1.5rem; }
+
+        /* Footer */
+        footer {
+            background: var(--col-surface-light);
+            padding: 6rem 5% 2rem;
+            border-top: 1px solid rgba(255,255,255,0.05);
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1.5fr 1fr;
+            gap: 4rem;
+            margin-bottom: 4rem;
+        }
+        .footer-col h4 {
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 2rem;
+            color: var(--col-primary);
+        }
+        .footer-links { list-style: none; }
+        .footer-links li { margin-bottom: 1rem; }
+        .footer-links a { color: var(--col-text-muted); }
+        .footer-links a:hover { color: var(--col-primary); padding-left: 5px; }
+        .footer-contact p { display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1.5rem; }
+        .footer-contact i { color: var(--col-primary); margin-top: 5px; }
+        .qr-code { width: 150px; height: 150px; border-radius: 12px; margin-bottom: 1.5rem; border: 4px solid white; }
+        .footer-socials { display: flex; gap: 1rem; }
+        .footer-socials a {
+            width: 40px; height: 40px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.1);
+            display: flex; align-items: center; justify-content: center;
+        }
+        .footer-socials a:hover { background: var(--col-primary); color: var(--col-base); }
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: var(--col-text-muted);
+            font-size: 0.9rem;
+        }
+
+        /* Floating Chat Widget */
+        .chat-widget {
+            position: fixed;
+            bottom: 30px; right: 30px;
+            z-index: 9990;
+        }
+        .chat-fab {
+            width: 65px; height: 65px;
+            border-radius: 50%;
+            background: var(--col-primary);
+            color: var(--col-base);
+            display: flex; align-items: center; justify-content: center;
+            font-size: 28px;
+            cursor: pointer;
+            box-shadow: var(--shadow-glow);
+            transition: transform 0.3s ease;
+            animation: pulse 2s infinite;
+        }
+        .chat-fab:hover { transform: scale(1.1); }
+        .chat-panel {
+            position: absolute;
+            bottom: 85px; right: 0;
+            width: 350px;
+            background: rgba(20, 22, 28, 0.95);
+            backdrop-filter: blur(30px);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 24px;
+            box-shadow: var(--shadow-soft);
+            overflow: hidden;
+            transform: scale(0.8) translateY(20px);
+            opacity: 0;
+            pointer-events: none;
+            transition: transform 0.3s cubic-bezier(0.4,0,0.2,1), opacity 0.3s ease;
+            display: flex; flex-direction: column;
+        }
+        .chat-panel.active {
+            transform: scale(1) translateY(0);
+            opacity: 1;
+            pointer-events: all;
+        }
+        .chat-header {
+            background: rgba(255,255,255,0.05);
+            padding: 1.5rem;
+            display: flex; align-items: center; justify-content: space-between;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+        .chat-profile { display: flex; align-items: center; gap: 1rem; }
+        .chat-avatar {
+            width: 45px; height: 45px; border-radius: 50%;
+            object-fit: cover; border: 2px solid var(--col-primary);
+        }
+        .chat-name { font-weight: 600; font-size: 1.1rem; }
+        .chat-status { font-size: 0.8rem; color: #10b981; display: flex; align-items: center; gap: 5px; }
+        .chat-status::before { content: ''; width: 8px; height: 8px; background: #10b981; border-radius: 50%; animation: pulse 2s infinite; }
+        .chat-close { background: none; border: none; color: white; font-size: 20px; cursor: pointer; }
+        .chat-body {
+            height: 350px; padding: 1.5rem; overflow-y: auto;
+            display: flex; flex-direction: column; gap: 1rem;
+        }
+        .chat-bubble {
+            max-width: 85%; padding: 1rem 1.2rem; border-radius: 18px;
+            font-size: 0.95rem; line-height: 1.4; position: relative;
+        }
+        .bubble-in { background: rgba(255,255,255,0.1); border-bottom-left-radius: 4px; align-self: flex-start; }
+        .bubble-out { background: var(--col-primary); color: var(--col-base); border-bottom-right-radius: 4px; align-self: flex-end; }
+        .chat-time { font-size: 0.7rem; color: var(--col-text-muted); margin-top: 5px; align-self: flex-start; }
+        .bubble-out + .chat-time { align-self: flex-end; }
+        .chat-quick-replies { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem; }
+        .quick-reply {
+            background: rgba(217, 119, 6, 0.1); border: 1px solid rgba(217, 119, 6, 0.3);
+            color: var(--col-primary); padding: 6px 12px; border-radius: 999px;
+            font-size: 0.85rem; cursor: pointer; transition: all 0.2s ease;
+        }
+        .quick-reply:hover { background: var(--col-primary); color: var(--col-base); }
+        .chat-input-area {
+            padding: 1rem; border-top: 1px solid rgba(255,255,255,0.05);
+            display: flex; gap: 0.5rem; background: rgba(0,0,0,0.2);
+        }
+        .chat-input {
+            flex-grow: 1; background: none; border: none; color: white;
+            font-family: var(--font-body); outline: none;
+        }
+        .chat-submit {
+            background: none; border: none; color: var(--col-primary);
+            font-size: 1.2rem; cursor: pointer;
+        }
+
+        /* Promo Popup */
+        .promo-popup {
+            position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%) scale(0.9);
+            background: var(--col-surface); border: 1px solid rgba(255,255,255,0.1);
+            padding: 4rem; border-radius: 24px; z-index: 99999;
+            text-align: center; box-shadow: 0 30px 60px rgba(0,0,0,0.8);
+            opacity: 0; pointer-events: none; transition: all 0.4s ease;
+            max-width: 500px; width: 90%;
+        }
+        .promo-popup.active { opacity: 1; pointer-events: all; transform: translate(-50%, -50%) scale(1); }
+        .promo-overlay {
+            position: fixed; inset: 0; background: rgba(0,0,0,0.8); backdrop-filter: blur(5px);
+            z-index: 99998; opacity: 0; pointer-events: none; transition: opacity 0.4s ease;
+        }
+        .promo-overlay.active { opacity: 1; pointer-events: all; }
+        .promo-close { position: absolute; top: 1.5rem; right: 1.5rem; background: none; border: none; color: white; font-size: 24px; cursor: pointer; }
+        .promo-popup h3 { font-size: 2.5rem; color: var(--col-primary); margin-bottom: 1rem; }
+
+        /* Sticky Mobile CTA */
+        .mobile-sticky-cta {
+            display: none; position: fixed; bottom: 0; left: 0; width: 100%;
+            background: var(--col-primary); padding: 1rem; z-index: 9998;
+            text-align: center; box-shadow: 0 -10px 20px rgba(0,0,0,0.3);
+        }
+        .mobile-sticky-cta a {
+            color: var(--col-base); font-family: var(--font-heading); font-weight: 800;
+            font-size: 1.2rem; text-transform: uppercase; display: block;
+        }
+
+        /* Animations */
+        @keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(217, 119, 6, 0.4); } 70% { box-shadow: 0 0 0 15px rgba(217, 119, 6, 0); } 100% { box-shadow: 0 0 0 0 rgba(217, 119, 6, 0); } }
+        @keyframes heroReveal { from { opacity: 0; transform: translateY(40px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes float { 0% { transform: translateY(0px); } 50% { transform: translateY(-15px); } 100% { transform: translateY(0px); } }
+        @keyframes kenburns { 0% { transform: scale(1); } 100% { transform: scale(1.15); } }
+        @keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+
+        /* Scroll Reveal Classes */
+        .reveal { opacity: 0; transform: translateY(50px); transition: all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1); }
+        .reveal.revealed { opacity: 1; transform: translateY(0); }
+        .delay-1 { transition-delay: 0.1s; } .delay-2 { transition-delay: 0.2s; } .delay-3 { transition-delay: 0.3s; }
+
+        /* MANDATORY GLOBAL OVERRIDES */
+        *, *::before, *::after { box-sizing: border-box; }
+        html, body { overflow-x: hidden !important; width: 100%; margin: 0; padding: 0; }
+        img, video, iframe { max-width: 100%; height: auto; }
+        a { color: inherit; text-decoration: none; }
+        
+        /* DESKTOP NAV DEFAULTS */
+        nav, header { position: fixed !important; top: 0 !important; left: 0 !important; width: 100% !important; z-index: 9999 !important; display: flex !important; justify-content: space-between !important; align-items: center !important; padding: 1rem 5% !important; background: rgba(10,10,10,0.9) !important; backdrop-filter: blur(20px) !important; box-sizing: border-box !important; }
+        body { padding-top: 100px !important; }
+        .hamburger, .menu-toggle, .mobile-menu-btn { display: none !important; }
+        .sidebar, .side-bar, .sticky-sidebar { display: flex; }
+        section, .section { padding: clamp(4rem, 8vh, 8rem) 5% !important; width: 100% !important; box-sizing: border-box !important; overflow: hidden; }
+        h1, h2, h3 { overflow-wrap: break-word; word-break: break-word; max-width: 100%; }
+
+        /* TABLET OVERRIDES */
+        @media (min-width: 769px) and (max-width: 1024px) {
+          nav .nav-links, nav .desktop-nav, nav ul { display: none !important; }
+          .nav-actions .btn-primary, .nav-actions .btn { display: none !important; }
+          .hamburger, .menu-toggle, .mobile-menu-btn { display: flex !important; align-items: center; justify-content: center; font-size: 24px; color: white; background: none; border: none; cursor: pointer; }
+          .hero { display: flex !important; flex-direction: column !important; min-height: auto !important; height: auto !important; padding-top: 110px !important; gap: 2rem !important; grid-template-columns: 1fr !important; }
+          .hero-content, .hero-text, .hero-left { order: -1 !important; width: 100% !important; }
+          .hero-image-wrapper, .hero-image, .hero-visual, .hero-right { height: 45vh !important; max-height: 400px !important; min-height: unset !important; width: 100% !important; order: 1 !important; border-radius: 20px !important; overflow: hidden !important; }
+          .about, .about-section, .location, .location-section, .spotlight, .contact, .contact-section, .team, .team-section, .experience, .results, .process { display: flex !important; flex-direction: column !important; grid-template-columns: 1fr !important; }
+          .about > *, .about-section > *, .location-section > *, .spotlight > *, .contact-section > * { width: 100% !important; }
+          [class*="grid"], .services-grid, .stats-grid, .pricing-grid, .faq-grid, .features-grid, .gallery-grid, .bento-grid { grid-template-columns: repeat(2, 1fr) !important; }
+          .bento-grid > *, .gallery-grid > * { grid-column: span 1 !important; grid-row: span 1 !important; }
+          .footer-grid, .footer-columns, footer > div { grid-template-columns: repeat(2, 1fr) !important; }
+          section, .section { padding: 3rem 5% !important; }
+          .sidebar, .side-bar, .sticky-sidebar { display: none !important; }
+          html, body { overflow-x: hidden !important; }
+         }
+
+         /* MOBILE OVERRIDES */
+        @media (max-width: 768px) {
+          nav, header { padding: 15px !important; background: rgba(0,0,0,0.98) !important; border-bottom: 1px solid rgba(255,255,255,0.05); }
+          nav .logo, nav .brand, header .logo { font-size: 1.1rem !important; max-width: 50vw; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; margin-right: auto; }
+          nav .nav-links, nav .desktop-nav, nav ul { display: none !important; }
+          .nav-actions .btn-primary, .nav-actions .btn { display: none !important; }
+          .hamburger, .menu-toggle, .mobile-menu-btn { display: flex !important; align-items: center; justify-content: center; font-size: 24px; color: white; background: none; border: none; cursor: pointer; z-index: 101; margin-left: 15px; }
+          
+          .hero { display: flex !important; flex-direction: column !important; min-height: auto !important; height: auto !important; padding-top: 100px !important; gap: 1.5rem !important; grid-template-columns: 1fr !important; }
+          .hero-content, .hero-text, .hero-left { order: -1 !important; width: 100% !important; }
+          .hero-image-wrapper, .hero-image, .hero-visual, .hero-right { height: 35vh !important; max-height: 280px !important; min-height: unset !important; width: 100% !important; order: 1 !important; border-radius: 16px !important; overflow: hidden !important; }
+          .hero-image-wrapper img, .hero-image img { width: 100% !important; height: 100% !important; object-fit: cover !important; }
+          .hero h1, .hero-title { font-size: clamp(1.8rem, 7vw, 3rem) !important; line-height: 1.15 !important; margin-bottom: 0.75rem !important; }
+          .hero p, .hero-subtitle { font-size: 1rem !important; margin-bottom: 1rem !important; }
+          
+          /* CRITICAL: Force ALL section layouts to stack */
+          [class*="grid"], [class*="row"],
+          .about, .about-grid, .about-section, .about-content,
+          .services-grid, .team-grid, .gallery-grid, .bento-grid,
+          .footer-grid, .footer-columns, .stats-grid,
+          .location, .location-section, .location-grid, .location-content,
+          .spotlight, .spotlight-content, .contact, .contact-section, .contact-grid,
+          .team, .team-section, .experience, .results, .process, .social-grid,
+          .hero { grid-template-columns: 1fr !important; display: flex !important; flex-direction: column !important; }
+          .about > *, .about-section > *, .location-section > *, .spotlight > *, .contact-section > *, .team > *:not(.team-grid) { width: 100% !important; }
+          [class*="grid"] > *, .bento-grid > *, .gallery-grid > * { grid-column: span 1 !important; grid-row: span 1 !important; width: 100% !important; }
+          
+          footer { padding: 2rem 1rem !important; margin-bottom: 60px !important; }
+          .hero-buttons, .hero-cta, .hero .btn-group, .hero-actions { display: flex !important; flex-direction: column !important; align-items: stretch; width: 100%; }
+          .hero-buttons a, .hero-buttons button, .hero .btn-group a { width: 100% !important; text-align: center; box-sizing: border-box; }
+          
+          [class*="chat-widget"], [class*="floating-chat"], #chat-widget { bottom: 90px !important; right: 15px !important; }
+          .sidebar, .side-bar, .sticky-sidebar { display: none !important; }
+          .cursor-dot, .cursor-outline { display: none !important; }
+          
+          /* Promo popup — don't block the viewport */
+          .promo-popup, #promoPopup { position: fixed !important; top: auto !important; bottom: 80px !important; left: 5% !important; right: 5% !important; width: 90% !important; max-height: 50vh !important; border-radius: 16px !important; overflow-y: auto !important; transform: none !important; }
+          
+          .mobile-sticky-cta { display: block !important; }
+        }
+    
+/* ═══ SITEFLOW: Hero Visibility Safety Net ═══ */
+.hero h1, .hero-title, .hero h2, .hero p, .hero-subtitle,
+.hero .btn-group, .hero-buttons, .hero-cta, .hero-actions,
+.hero .eyebrow, .hero span, .hero a,
+section.hero > *, .hero-content, .hero-content > * {
+  opacity: 1 !important;
+  transform: none !important;
+  visibility: visible !important;
+}
+/* Only allow the hero ANIMATION to run (not scroll-reveal) */
+.hero h1, .hero-title { animation: heroReveal 1s ease forwards !important; }
+.hero p, .hero-subtitle { animation: heroReveal 1s ease 0.2s forwards !important; }
+.hero .btn-group, .hero-buttons, .hero-cta { animation: heroReveal 1s ease 0.4s forwards !important; }
+@keyframes heroReveal { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+
+/* ═══ SITEFLOW: Tablet Breakpoint (769px–1024px) ═══ */
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* NAV — switch to hamburger on tablet too */
+  .nav-links, .desktop-nav, nav ul, .nav-menu, .desktop-links,
+  .nav-actions .btn-primary, .nav-actions .btn { display: none !important; }
+  .hamburger, .menu-toggle, .mobile-menu-btn, .nav-toggle,
+  [class*="hamburger"], [class*="menu-btn"] {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  /* HERO — stack vertically, text first */
+  .hero {
+    display: flex !important;
+    flex-direction: column !important;
+    min-height: auto !important;
+    height: auto !important;
+    padding-top: 110px !important;
+    gap: 2rem !important;
+    grid-template-columns: 1fr !important;
+  }
+  .hero-content, .hero-text, .hero-left, .hero > div:first-child {
+    order: -1 !important;
+    width: 100% !important;
+  }
+  .hero-image-wrapper, .hero-image, .hero-visual, .hero-right,
+  .hero-img, .hero-media {
+    height: 45vh !important;
+    max-height: 400px !important;
+    min-height: unset !important;
+    width: 100% !important;
+    order: 1 !important;
+    border-radius: 20px !important;
+    overflow: hidden !important;
+  }
+  .hero-image-wrapper img, .hero-image img, .hero-visual img {
+    width: 100% !important; height: 100% !important; object-fit: cover !important;
+  }
+  .hero h1, .hero-title { font-size: clamp(2.2rem, 5vw, 3.5rem) !important; }
+
+  /* ALL SECTION LAYOUTS — force stack or 2-col on tablet */
+  /* These target EVERY common class the AI generates */
+  .about, .about-section, .about-content,
+  .location, .location-section, .location-grid, .location-content,
+  .spotlight, .spotlight-content,
+  .contact, .contact-section, .contact-grid,
+  .team, .team-section,
+  [class*="split"], [class*="two-col"], [class*="two_col"],
+  section > div[style*="grid-template-columns"],
+  section > div[style*="display: grid"],
+  section > div[style*="display:grid"] {
+    display: flex !important;
+    flex-direction: column !important;
+    grid-template-columns: 1fr !important;
+  }
+  .about > *, .about-section > *, .location-section > *,
+  .spotlight > *, .contact-section > * {
+    width: 100% !important;
+  }
+
+  /* GRIDS — 2 columns max on tablet */
+  [class*="grid"], .services-grid, .stats-grid,
+  .pricing-grid, .faq-grid, .features-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .gallery-grid, .bento-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .bento-grid > *, .gallery-grid > * {
+    grid-column: span 1 !important;
+    grid-row: span 1 !important;
+  }
+
+  /* FOOTER */
+  .footer-grid, .footer-columns, footer > div {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  section, .section { padding: 3rem 5% !important; }
+  .sidebar, .side-bar, .sticky-sidebar { display: none !important; }
+
+  /* POPUP */
+  .promo-popup, #promoPopup, [class*="promo-popup"],
+  .modal-overlay, #popup, .popup {
+    width: 70% !important; max-width: 500px !important;
+    left: 50% !important; transform: translateX(-50%) !important;
+  }
+
+  html, body { overflow-x: hidden !important; }
+  *, *::before, *::after { max-width: 100vw; box-sizing: border-box; }
+}
+
+/* ═══ SITEFLOW: Mobile Safety Net ═══ */
+@media (max-width: 768px) {
+  /* Force ALL section layouts to stack on mobile */
+  .hero, [class*="grid"], [class*="row"],
+  .about, .about-grid, .about-section, .about-content,
+  .services-grid, .team-grid, .gallery-grid,
+  .bento-grid, .footer-grid, .footer-columns, .stats-grid,
+  .pricing-grid, .faq-grid, .features-grid,
+  .location, .location-section, .location-grid, .location-content,
+  .spotlight, .spotlight-content, .spotlight-grid,
+  .contact, .contact-section, .contact-grid, .contact-content,
+  .team, .team-section, .team-content,
+  .experience, .experience-section,
+  .results, .results-section, .results-grid,
+  .process, .process-section, .process-grid,
+  .testimonials-grid, .reviews-grid, .social-grid,
+  [class*="split"], [class*="two-col"], [class*="two_col"],
+  section > div[style*="grid-template-columns"],
+  section > div[style*="display: grid"],
+  section > div[style*="display:grid"] {
+    display: flex !important;
+    flex-direction: column !important;
+    grid-template-columns: 1fr !important;
+  }
+  /* Force all children of stacked sections to take full width */
+  .about > *, .about-section > *, .location-section > *,
+  .spotlight > *, .contact-section > *, .team > *:not(.team-grid),
+  .experience > *, .results > *, .process > * {
+    width: 100% !important;
+  }
+  /* Prevent any element from exceeding screen width */
+  *, *::before, *::after { max-width: 100vw; box-sizing: border-box; }
+  img, video, iframe, canvas { max-width: 100% !important; }
+  /* Force hide desktop nav, show hamburger */
+  .nav-links, .desktop-nav, nav ul, .nav-menu, .desktop-links {
+    display: none !important;
+  }
+  .hamburger, .menu-toggle, .mobile-menu-btn, .nav-toggle, [class*="hamburger"], [class*="menu-btn"] {
+    display: flex !important;
+  }
+  /* Prevent horizontal scroll */
+  html, body { overflow-x: hidden !important; width: 100% !important; }
+
+  /* ═══ HERO FIX — TEXT FIRST, IMAGE SECOND, NO BLANK SPACE ═══ */
+  .hero {
+    min-height: auto !important;
+    height: auto !important;
+    padding-top: 100px !important;
+    padding-bottom: 2rem !important;
+    gap: 1.5rem !important;
+  }
+  /* Force text content to appear FIRST on mobile */
+  .hero-content, .hero-text, .hero-left, .hero > div:first-child {
+    order: -1 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  /* Cap hero image container height — NEVER let it dominate the viewport */
+  .hero-image-wrapper, .hero-image, .hero-visual, .hero-right,
+  .hero-img, .hero-media, .hero > div:last-child:not(.hero-content):not(.hero-text) {
+    height: 35vh !important;
+    max-height: 280px !important;
+    min-height: unset !important;
+    width: 100% !important;
+    order: 1 !important;
+    border-radius: 16px !important;
+    overflow: hidden !important;
+  }
+  .hero-image-wrapper img, .hero-image img, .hero-visual img, .hero-img img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+  }
+  .hero h1, .hero-title {
+    font-size: clamp(1.8rem, 7vw, 3rem) !important;
+    line-height: 1.15 !important;
+    margin-bottom: 0.75rem !important;
+  }
+  .hero p, .hero-subtitle { font-size: 1rem !important; margin-bottom: 1rem !important; }
+  .hero .btn-group, .hero-buttons, .hero-cta, .hero-actions {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    width: 100% !important;
+    gap: 0.75rem !important;
+  }
+  .hero .btn-group a, .hero .btn-group button,
+  .hero-buttons a, .hero-cta a {
+    width: 100% !important;
+    text-align: center !important;
+    box-sizing: border-box !important;
+  }
+  /* Hide sidebar on mobile */
+  .sidebar, .side-bar, .sticky-sidebar { display: none !important; }
+  /* Fix chat widget position above mobile CTA */
+  [class*="chat"], #chat-widget, .chat-fab, .floating-chat { bottom: 90px !important; }
+
+  /* ═══ PROMO POPUP + OVERLAY FIX ═══ */
+  .promo-overlay, [class*="promo-overlay"], [class*="popup-overlay"] {
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    background: rgba(0,0,0,0.4) !important;
+  }
+  .promo-popup, #promoPopup, [class*="promo-popup"],
+  .modal-overlay, #popup, .popup {
+    position: fixed !important;
+    top: auto !important;
+    bottom: 80px !important;
+    left: 5% !important;
+    right: 5% !important;
+    width: 90% !important;
+    max-height: 50vh !important;
+    border-radius: 16px !important;
+    overflow-y: auto !important;
+    transform: none !important;
+  }
+
+  /* ═══ NEWSLETTER FORM FIX — stack input + button ═══ */
+  .newsletter-form, [class*="newsletter"] form, [class*="subscribe"] form,
+  .email-form, .signup-form {
+    flex-direction: column !important;
+    gap: 0.75rem !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  .newsletter-form input, .newsletter-form button,
+  [class*="newsletter"] input, [class*="newsletter"] button {
+    width: 100% !important;
+    min-width: unset !important;
+    box-sizing: border-box !important;
+  }
+
+  /* ═══ CTA SECTION FIX — center align on mobile ═══ */
+  .final-cta, .cta-section, .cta-banner, [class*="final-cta"],
+  [class*="cta-section"], [class*="cta-banner"] {
+    text-align: center !important;
+    padding: 3rem 5% !important;
+  }
+  .final-cta a, .final-cta button, .cta-section a, .cta-section button,
+  .cta-banner a, .cta-banner button {
+    width: 100% !important;
+    max-width: 320px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: block !important;
+    text-align: center !important;
+    box-sizing: border-box !important;
+  }
+
+  /* ═══ GOOGLE MAPS FIX — cap height on mobile ═══ */
+  iframe[src*="google.com/maps"], iframe[src*="maps.google"],
+  .map-container, .map-wrapper, [class*="map"] iframe {
+    height: 250px !important;
+    max-height: 250px !important;
+    width: 100% !important;
+    border-radius: 16px !important;
+  }
+
+  /* ═══ FOOTER FIX — stack on mobile ═══ */
+  footer, .footer { padding: 2rem 5% !important; }
+  .footer-grid, .footer-columns, footer > div,
+  footer > .container, footer > .wrapper {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 2rem !important;
+  }
+}
+
+</style>
+</head>
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-text">RHINO ROOFING</div>
+    </div>
+
+    <!-- Mobile Menu Overlay (HTML Structure Only per rules) -->
+    <div class="mobile-menu">
+        <button class="mobile-menu-close"><i class="fas fa-times"></i></button>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#reviews">Reviews</a>
+        <a href="tel:9313046119" style="color: var(--col-primary); margin-top: 2rem;">Call Now</a>
+    </div>
+
+    <!-- Header -->
+    <header id="header">
+        <a href="#" class="logo">
+            <span>R</span> RHINO ROOFING
+        </a>
+        
+        <nav class="nav-links">
+            <a href="#about">Our Legacy</a>
+            <a href="#services">Expertise</a>
+            <a href="#gallery">Portfolio</a>
+            <a href="#reviews">Testimonials</a>
+        </nav>
+        
+        <div class="nav-actions">
+            <div class="status-badge" id="statusBadge">
+                <div class="status-dot"></div>
+                <span class="status-text">CHECKING...</span>
+            </div>
+            <a href="tel:9313046119" class="btn btn-primary">
+                <i class="fas fa-phone"></i> 931-304-6119
+            </a>
+            <button class="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Sticky Sidebar -->
+    <div class="sticky-sidebar">
+        <a href="tel:9313046119" title="Call Us"><i class="fas fa-phone"></i></a>
+        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <span class="eyebrow">Rhino Roofing Contractors • Commercial Experts</span>
+            <h1>ELEVATING COMMERCIAL INFRASTRUCTURE.</h1>
+            <p>Three decades of uncompromising craftsmanship and structural integrity. We deliver premium commercial roofing solutions built to withstand the elements and protect your business.</p>
+            <div class="hero-buttons">
+                <a href="tel:9313046119" class="btn btn-primary">
+                    Request Consultation <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#services" class="btn btn-outline">
+                    Explore Services
+                </a>
+            </div>
+        </div>
+        <div class="hero-image-wrapper">
+            <img src="./image-1.jpg" alt="Commercial Roofing Exterior" class="hero-image">
+        </div>
+    </section>
+
+    <!-- Scrolling Marquee -->
+    <div class="marquee-wrapper">
+        <div class="marquee-content">
+            <div class="marquee-item">Commercial Roofing <i class="fas fa-star"></i></div>
+            <div class="marquee-item">Full Deck Replacements <i class="fas fa-star"></i></div>
+            <div class="marquee-item">Tear-Offs <i class="fas fa-star"></i></div>
+            <div class="marquee-item">New Installations <i class="fas fa-star"></i></div>
+            <div class="marquee-item">Expert Repairs <i class="fas fa-star"></i></div>
+            <!-- Duplicate for infinite scroll -->
+            <div class="marquee-item">Commercial Roofing <i class="fas fa-star"></i></div>
+            <div class="marquee-item">Full Deck Replacements <i class="fas fa-star"></i></div>
+            <div class="marquee-item">Tear-Offs <i class="fas fa-star"></i></div>
+            <div class="marquee-item">New Installations <i class="fas fa-star"></i></div>
+            <div class="marquee-item">Expert Repairs <i class="fas fa-star"></i></div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-image reveal">
+            <img src="./image-2.jpg" alt="Rhino Roofing Team at Work">
+        </div>
+        <div class="about-content reveal delay-1">
+            <span class="eyebrow">Our Legacy</span>
+            <h2>Three Decades of Unmatched Reliability.</h2>
+            <p>At Rhino Roofing Contractors, we bring more than thirty years of dedicated commercial roofing experience to the table. As a family-owned and operated business, our reputation is built on a solid foundation of expertise, reliability, and exceptional craftsmanship.</p>
+            <p>We understand that a commercial roof is a massive investment. That's why we approach every project—from minor repairs to complete structural overhauls—with the same meticulous attention to detail and commitment to excellence.</p>
+            <a href="tel:9313046119" class="btn btn-outline" style="margin-top: 1rem;">Speak with an Expert</a>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section style="padding-top: 0;">
+        <div class="container">
+            <div class="stats-grid reveal">
+                <div class="stat-card">
+                    <i class="fas fa-calendar-alt"></i>
+                    <div class="stat-number"><span class="count" data-target="30">0</span>+</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-building"></i>
+                    <div class="stat-number"><span class="count" data-target="500">0</span>+</div>
+                    <div class="stat-label">Projects Completed</div>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-star"></i>
+                    <div class="stat-number"><span class="count" data-target="5">0</span></div>
+                    <div class="stat-label">Star Rating</div>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <div class="stat-number"><span class="count" data-target="100">0</span>%</div>
+                    <div class="stat-label">Satisfaction Guarantee</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="container">
+        <div class="reveal">
+            <span class="eyebrow">The Rhino Advantage</span>
+            <h2>Why Industry Leaders Choose Us.</h2>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card reveal delay-1">
+                <div class="feature-icon"><i class="fas fa-hard-hat"></i></div>
+                <h3>Master Craftsmanship</h3>
+                <p>Our crews are highly trained specialists in commercial systems, ensuring flawless execution on every square foot.</p>
+            </div>
+            <div class="feature-card reveal delay-2">
+                <div class="feature-icon"><i class="fas fa-clock"></i></div>
+                <h3>Reliable Timelines</h3>
+                <p>We respect your business operations. Our project management ensures we finish on time, every time, minimizing disruption.</p>
+            </div>
+            <div class="feature-card reveal delay-3">
+                <div class="feature-icon"><i class="fas fa-file-contract"></i></div>
+                <h3>Family Owned Integrity</h3>
+                <p>No corporate runarounds. You deal directly with ownership that cares deeply about the community and our reputation.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="container">
+        <div class="reveal">
+            <span class="eyebrow">Our Expertise</span>
+            <h2>Comprehensive Commercial Solutions.</h2>
+        </div>
+        <div class="services-grid">
+            <div class="service-card reveal delay-1">
+                <img src="./image-3.jpg" alt="Roof Tear-Offs" class="service-bg">
+                <div class="service-content">
+                    <h3>Complete Tear-Offs</h3>
+                    <p>Safe, efficient removal of existing failing roof systems down to the deck, preparing your building for a fresh, secure start.</p>
+                    <a href="tel:9313046119" class="service-link">Get a Quote <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="service-card reveal delay-2">
+                <img src="./image-1.jpg" alt="Deck Replacements" class="service-bg">
+                <div class="service-content">
+                    <h3>Full Deck Replacements</h3>
+                    <p>Structural integrity is paramount. We replace compromised decking to ensure your new roof has a solid, code-compliant foundation.</p>
+                    <a href="tel:9313046119" class="service-link">Get a Quote <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="service-card reveal delay-1">
+                <img src="./image-2.jpg" alt="New Installations" class="service-bg">
+                <div class="service-content">
+                    <h3>New Installations</h3>
+                    <p>State-of-the-art commercial roofing systems installed with precision, offering maximum energy efficiency and weather resistance.</p>
+                    <a href="tel:9313046119" class="service-link">Get a Quote <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="service-card reveal delay-2">
+                <img src="./image-3.jpg" alt="Maintenance & Repairs" class="service-bg">
+                <div class="service-content">
+                    <h3>Expert Repairs</h3>
+                    <p>Rapid response leak detection and targeted repairs to extend the lifespan of your current roof and protect your interior assets.</p>
+                    <a href="tel:9313046119" class="service-link">Get a Quote <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing / Menu -->
+    <section class="pricing-section">
+        <div class="container reveal">
+            <div style="text-align: center;">
+                <span class="eyebrow">Investment Guide</span>
+                <h2>Transparent Commercial Pricing.</h2>
+                <p style="max-width: 600px; margin: 0 auto;">Every commercial project is unique. Below are baseline estimates. Contact us for a detailed, custom structural assessment.</p>
+            </div>
+            
+            <div class="pricing-container">
+                <div class="pricing-item">
+                    <span class="pricing-name">Comprehensive Inspection</span>
+                    <div class="pricing-dots"></div>
+                    <span class="pricing-price">Complimentary</span>
+                </div>
+                <p class="pricing-desc">Full structural assessment, core sampling, and detailed photographic report.</p>
+
+                <div class="pricing-item">
+                    <span class="pricing-name">Targeted Leak Repair</span>
+                    <div class="pricing-dots"></div>
+                    <span class="pricing-price">From $450</span>
+                </div>
+                <p class="pricing-desc">Emergency patching, flashing repair, and membrane sealing.</p>
+
+                <div class="pricing-item">
+                    <span class="pricing-name">Preventative Maintenance</span>
+                    <div class="pricing-dots"></div>
+                    <span class="pricing-price">Custom Quote</span>
+                </div>
+                <p class="pricing-desc">Bi-annual clearing of drains, seam inspection, and minor preventative patching.</p>
+
+                <div class="pricing-item">
+                    <span class="pricing-name">Full System Replacement</span>
+                    <div class="pricing-dots"></div>
+                    <span class="pricing-price">Per Sq. Ft.</span>
+                </div>
+                <p class="pricing-desc">Tear-off, insulation upgrade, and new TPO/EPDM membrane installation.</p>
+                
+                <div style="text-align: center; margin-top: 3rem;">
+                    <a href="tel:9313046119" class="btn btn-primary">Request Formal Bid</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter reveal">
+        <span class="eyebrow" style="color: var(--col-base);">Stay Protected</span>
+        <h2 style="color: var(--col-base);">Join Our Commercial Property Network.</h2>
+        <p style="color: rgba(0,0,0,0.7); max-width: 600px; margin: 0 auto;">Receive seasonal maintenance tips, industry updates, and exclusive priority service offers directly to your inbox.</p>
+        <form class="newsletter-form" onsubmit="event.preventDefault();">
+            <input type="email" class="newsletter-input" placeholder="Enter your business email..." required>
+            <button type="submit" class="btn btn-primary" style="padding: 1rem 2rem;">Subscribe</button>
+        </form>
+    </section>
+
+    <!-- The Team -->
+    <section class="container">
+        <div class="reveal" style="text-align: center;">
+            <span class="eyebrow">Leadership</span>
+            <h2>Meet The Experts.</h2>
+        </div>
+        <div class="team-grid">
+            <div class="team-card reveal delay-1">
+                <img src="./image-2.jpg" alt="John - Master Roofer" class="team-img">
+                <div class="team-info">
+                    <h3 class="team-name">Johnathan R.</h3>
+                    <div class="team-role">Master Commercial Roofer</div>
+                    <a href="tel:9313046119" class="btn btn-outline" style="width: 100%;">Contact John</a>
+                </div>
+            </div>
+            <div class="team-card reveal delay-2">
+                <img src="./image-1.jpg" alt="Sarah - Project Manager" class="team-img">
+                <div class="team-info">
+                    <h3 class="team-name">Sarah M.</h3>
+                    <div class="team-role">Lead Project Manager</div>
+                    <a href="tel:9313046119" class="btn btn-outline" style="width: 100%;">Contact Sarah</a>
+                </div>
+            </div>
+            <div class="team-card reveal delay-3">
+                <img src="./image-3.jpg" alt="Mike - Site Supervisor" class="team-img">
+                <div class="team-info">
+                    <h3 class="team-name">Michael T.</h3>
+                    <div class="team-role">Site Supervisor</div>
+                    <a href="tel:9313046119" class="btn btn-outline" style="width: 100%;">Contact Mike</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram / Social Feed -->
+    <section class="social-section container reveal">
+        <span class="eyebrow">On The Job</span>
+        <h2>Follow Our Journey.</h2>
+        <div class="social-grid">
+            <div class="social-item"><img src="./image-1.jpg" alt="IG Post"><div class="social-overlay"><span><i class="fas fa-heart"></i> 124</span></div></div>
+            <div class="social-item"><img src="./image-2.jpg" alt="IG Post"><div class="social-overlay"><span><i class="fas fa-heart"></i> 89</span></div></div>
+            <div class="social-item"><img src="./image-3.jpg" alt="IG Post"><div class="social-overlay"><span><i class="fas fa-heart"></i> 210</span></div></div>
+            <div class="social-item"><img src="./image-1.jpg" alt="IG Post"><div class="social-overlay"><span><i class="fas fa-heart"></i> 156</span></div></div>
+            <div class="social-item"><img src="./image-2.jpg" alt="IG Post"><div class="social-overlay"><span><i class="fas fa-heart"></i> 92</span></div></div>
+        </div>
+    </section>
+
+    <!-- Luxury Photo Gallery (Bento Box) -->
+    <section id="gallery" class="gallery-section">
+        <div class="container reveal">
+            <span class="eyebrow">Portfolio</span>
+            <h2>Showcase of Excellence.</h2>
+            <p>A visual testament to our commitment to structural perfection and aesthetic finish.</p>
+            
+            <div class="bento-grid">
+                <div class="bento-item bento-1 reveal delay-1"><img src="./image-1.jpg" alt="Gallery 1"></div>
+                <div class="bento-item bento-2 reveal delay-2"><img src="./image-2.jpg" alt="Gallery 2"></div>
+                <div class="bento-item bento-3 reveal delay-3"><img src="./image-3.jpg" alt="Gallery 3"></div>
+                <div class="bento-item bento-4 reveal delay-1"><img src="./image-2.jpg" alt="Gallery 4"></div>
+                <div class="bento-item bento-5 reveal delay-2"><img src="./image-1.jpg" alt="Gallery 5"></div>
+                <div class="bento-item bento-6 reveal delay-3"><img src="./image-3.jpg" alt="Gallery 6"></div>
+                <div class="bento-item bento-7 reveal delay-1"><img src="./image-1.jpg" alt="Gallery 7"></div>
+                <div class="bento-item bento-8 reveal delay-2"><img src="./image-2.jpg" alt="Gallery 8"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Before & After Spotlight -->
+    <section class="spotlight container">
+        <div class="reveal">
+            <span class="eyebrow">Transformation</span>
+            <h2>Structural Revival.</h2>
+            <p>Witness the difference professional commercial roofing makes. We take failing, hazardous roofs and transform them into secure, energy-efficient assets that protect your business for decades.</p>
+            <a href="tel:9313046119" class="btn btn-primary" style="margin-top: 1rem;">Start Your Transformation</a>
+        </div>
+        <div class="ba-container reveal delay-2">
+            <div class="ba-label">Completed Project</div>
+            <img src="./image-3.jpg" alt="Completed Commercial Roof">
+        </div>
+    </section>
+
+    <!-- Map & Hours -->
+    <section class="container location-section">
+        <div class="reveal">
+            <div class="map-container">
+                <iframe src="https://maps.google.com/maps?q=PHONE%3A%20931-304-6119&t=&z=15&ie=UTF8&iwloc=&output=embed" style="border:0;width:100%;height:100%;filter:invert(90%) hue-rotate(180deg);" allowfullscreen loading="lazy"></iframe>
+            </div>
+        </div>
+        <div class="hours-card reveal delay-1">
+            <span class="eyebrow">Availability</span>
+            <h2>Operating Hours.</h2>
+            <p>We are ready to serve your commercial roofing needs during the following hours.</p>
+            <ul class="hours-list">
+                <li><span class="day">Monday</span> <span class="time">5:00 AM – 7:00 PM</span></li>
+                <li><span class="day">Tuesday</span> <span class="time">5:00 AM – 7:00 PM</span></li>
+                <li><span class="day">Wednesday</span> <span class="time">5:00 AM – 7:00 PM</span></li>
+                <li><span class="day">Thursday</span> <span class="time">5:00 AM – 7:00 PM</span></li>
+                <li><span class="day">Friday</span> <span class="time">5:00 AM – 7:00 PM</span></li>
+                <li><span class="day">Saturday</span> <span class="time">Closed</span></li>
+                <li><span class="day">Sunday</span> <span class="time">Closed</span></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Reviews -->
+    <section id="reviews" class="reviews-section">
+        <div class="container reveal">
+            <span class="eyebrow">Client Feedback</span>
+            <h2>Trusted by Businesses.</h2>
+            
+            <div class="reviews-grid">
+                <div class="review-card reveal delay-1">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"Rhino Roofing completely overhauled our warehouse roof. The crew was professional, fast, and didn't disrupt our daily operations. Highly recommend their commercial services."</p>
+                    <div class="reviewer-name">- David L., Logistics CEO</div>
+                </div>
+                <div class="review-card reveal delay-2">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"After a severe storm, we had major leaks in our retail space. Rhino was out here the next morning and had it patched perfectly. True lifesavers."</p>
+                    <div class="reviewer-name">- Maria S., Store Owner</div>
+                </div>
+                <div class="review-card reveal delay-3">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"The level of craftsmanship is unmatched. They replaced our entire flat roof deck and the new TPO system has already lowered our energy bills."</p>
+                    <div class="reviewer-name">- Robert W., Property Manager</div>
+                </div>
+            </div>
+            
+            <div class="review-cta reveal">
+                <a href="https://rhinoroofingcontractor.com" target="_blank" class="btn btn-outline">Leave a Review on Google</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="container reveal">
+        <div style="text-align: center;">
+            <span class="eyebrow">Knowledge Base</span>
+            <h2>Frequently Asked Questions.</h2>
+        </div>
+        <div class="faq-container">
+            <div class="faq-item">
+                <button class="faq-question">What types of commercial roofs do you install? <i class="fas fa-chevron-down"></i></button>
+                <div class="faq-answer"><p>We specialize in a wide variety of commercial systems including TPO, EPDM, PVC, modified bitumen, and built-up roofing (BUR). We assess your specific building to recommend the best solution.</p></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Will a roof replacement disrupt my business? <i class="fas fa-chevron-down"></i></button>
+                <div class="faq-answer"><p>We pride ourselves on minimizing operational disruption. We coordinate closely with your management team, maintain clean worksites, and adhere to strict safety protocols to ensure your business can continue running smoothly.</p></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Do you offer emergency repair services? <i class="fas fa-chevron-down"></i></button>
+                <div class="faq-answer"><p>Yes, we understand that roof leaks can cause immediate damage to your interior assets. We offer rapid response repair services to mitigate damage and secure your property.</p></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Are you licensed and insured? <i class="fas fa-chevron-down"></i></button>
+                <div class="faq-answer"><p>Absolutely. Rhino Roofing Contractors is fully licensed, bonded, and insured. We carry comprehensive liability and worker's compensation insurance for your complete peace of mind.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Banner -->
+    <section class="final-cta reveal">
+        <div class="final-cta-content">
+            <h2>Secure Your Building's Future Today.</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 2.5rem; color: #ddd;">Don't wait for a leak to compromise your assets. Schedule a comprehensive commercial roof inspection with our experts.</p>
+            <a href="tel:9313046119" class="btn btn-primary" style="font-size: 1.2rem; padding: 1.5rem 3rem;">
+                Call 931-304-6119 Now
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="#" class="logo" style="margin-bottom: 1.5rem;">
+                        <span>R</span> RHINO ROOFING
+                    </a>
+                    <p style="font-size: 0.95rem;">Bringing more than three decades of commercial roofing experience to the table. Built on expertise, reliability, and exceptional craftsmanship.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">Our Legacy</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#gallery">Portfolio</a></li>
+                        <li><a href="#reviews">Reviews</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <div class="footer-contact">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <strong>Phone</strong><br>
+                            <a href="tel:9313046119">931-304-6119</a>
+                        </div>
+                    </div>
+                    <div class="footer-contact">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <strong>Hours</strong><br>
+                            Mon-Fri: 5am – 7pm
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect Instantly</h4>
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=tel:9313046119" alt="Scan to Connect" class="qr-code">
+                    <div class="footer-socials">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2024 Rhino Roofing Contractors. All rights reserved. <br><br>
+                Built by SiteFlow
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sticky Mobile CTA -->
+    <div class="mobile-sticky-cta">
+        <a href="tel:9313046119">BOOK NOW</a>
+    </div>
+
+    <!-- Promo Popup -->
+    <div class="promo-overlay" id="promoOverlay"></div>
+    <div class="promo-popup" id="promoPopup">
+        <button class="promo-close" id="promoClose"><i class="fas fa-times"></i></button>
+        <h3>VIP Priority Service</h3>
+        <p>Book your commercial roof inspection today and receive a complimentary thermal imaging leak detection scan.</p>
+        <div style="margin-top: 2rem;">
+            <input type="text" placeholder="Your Name" style="width: 100%; padding: 1rem; margin-bottom: 1rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.2); background: rgba(0,0,0,0.3); color: white;">
+            <input type="tel" placeholder="Phone Number" style="width: 100%; padding: 1rem; margin-bottom: 1.5rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.2); background: rgba(0,0,0,0.3); color: white;">
+            <a href="tel:9313046119" class="btn btn-primary" style="width: 100%;">Claim Offer</a>
+        </div>
+    </div>
+
+    <!-- Floating Chat Widget -->
+    <div class="chat-widget" id="chatWidget">
+        <div class="chat-panel" id="chatPanel">
+            <div class="chat-header">
+                <div class="chat-profile">
+                    <img src="./image-1.jpg" alt="Support" class="chat-avatar">
+                    <div>
+                        <div class="chat-name">Support Team</div>
+                        <div class="chat-status">Online</div>
+                    </div>
+                </div>
+                <button class="chat-close" id="chatCloseBtn"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="chat-body" id="chatBody">
+                <div class="chat-bubble bubble-in">Hi there! How can we help you at Rhino Roofing Contractors today?</div>
+                <div class="chat-time">Just now</div>
+                
+                <div class="chat-quick-replies">
+                    <button class="quick-reply" data-reply="Hours?">Hours?</button>
+                    <button class="quick-reply" data-reply="Services?">Services?</button>
+                    <button class="quick-reply" data-reply="WhatsApp Us">WhatsApp Us</button>
+                    <button class="quick-reply" data-reply="Leave a Review">Leave a Review</button>
+                </div>
+            </div>
+            <div class="chat-input-area">
+                <input type="text" class="chat-input" placeholder="Type a message..." id="chatInput">
+                <button class="chat-submit" id="chatSubmitBtn"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+        <div class="chat-fab" id="chatFab">
+            <i class="fas fa-comment-dots"></i>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        // 1. Preloader
+        try {
+            window.addEventListener('load', () => {
+                const preloader = document.getElementById('preloader');
+                setTimeout(() => {
+                    preloader.style.opacity = '0';
+                    preloader.style.visibility = 'hidden';
+                    setTimeout(() => preloader.remove(), 800);
+                }, 1500);
+            });
+        } catch(e) { console.warn(e); }
+
+        // 2. Scroll Reveal & Nav Background
+        try {
+            const header = document.getElementById('header');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) header.classList.add('scrolled');
+                else header.classList.remove('scrolled');
+            });
+
+            const observerOptions = { threshold: 0.1, rootMargin: "0px 0px -50px 0px" };
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('revealed');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+        } catch(e) { console.warn(e); }
+
+        // 3. Live Open/Closed Badge
+        try {
+            const updateStatus = () => {
+                const badge = document.getElementById('statusBadge');
+                const text = badge.querySelector('.status-text');
+                const now = new Date();
+                // Convert to Central Time (assuming TN area code 931) or local time
+                const day = now.getDay(); // 0 = Sun, 1 = Mon, ... 6 = Sat
+                const hour = now.getHours();
+                
+                // Mon-Fri (1-5), 5am (5) to 7pm (19)
+                let isOpen = false;
+                if (day >= 1 && day <= 5) {
+                    if (hour >= 5 && hour < 19) {
+                        isOpen = true;
+                    }
+                }
+
+                if (isOpen) {
+                    badge.classList.remove('status-closed');
+                    badge.classList.add('status-open');
+                    text.textContent = 'OPEN NOW';
+                } else {
+                    badge.classList.remove('status-open');
+                    badge.classList.add('status-closed');
+                    text.textContent = 'CLOSED';
+                }
+            };
+            updateStatus();
+            setInterval(updateStatus, 60000);
+        } catch(e) { console.warn(e); }
+
+        // 4. Animated Stats Counter
+        try {
+            const statsObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const counters = entry.target.querySelectorAll('.count');
+                        counters.forEach(counter => {
+                            const target = +counter.getAttribute('data-target');
+                            const duration = 2000; // 2 seconds
+                            const step = target / (duration / 16); // 60fps
+                            let current = 0;
+                            
+                            const updateCounter = () => {
+                                current += step;
+                                if (current < target) {
+                                    counter.innerText = Math.ceil(current);
+                                    requestAnimationFrame(updateCounter);
+                                } else {
+                                    counter.innerText = target;
+                                }
+                            };
+                            updateCounter();
+                        });
+                        statsObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.5 });
+            
+            const statsSection = document.querySelector('.stats-grid');
+            if(statsSection) statsObserver.observe(statsSection);
+        } catch(e) { console.warn(e); }
+
+        // 5. FAQ Accordion
+        try {
+            document.querySelectorAll('.faq-question').forEach(button => {
+                button.addEventListener('click', () => {
+                    const item = button.parentElement;
+                    const isActive = item.classList.contains('active');
+                    
+                    document.querySelectorAll('.faq-item').forEach(el => el.classList.remove('active'));
+                    
+                    if (!isActive) item.classList.add('active');
+                });
+            });
+        } catch(e) { console.warn(e); }
+
+        // 6. Floating Chat Widget
+        try {
+            const fab = document.getElementById('chatFab');
+            const panel = document.getElementById('chatPanel');
+            const closeBtn = document.getElementById('chatCloseBtn');
+            const body = document.getElementById('chatBody');
+            const input = document.getElementById('chatInput');
+            const submitBtn = document.getElementById('chatSubmitBtn');
+
+            const toggleChat = () => {
+                const isActive = panel.classList.contains('active');
+                if (isActive) {
+                    panel.classList.remove('active');
+                    fab.innerHTML = '<i class="fas fa-comment-dots"></i>';
+                } else {
+                    panel.classList.add('active');
+                    fab.innerHTML = '<i class="fas fa-times"></i>';
+                }
+            };
+
+            fab.addEventListener('click', toggleChat);
+            closeBtn.addEventListener('click', toggleChat);
+
+            const addMessage = (text, type, isHtml = false) => {
+                const bubble = document.createElement('div');
+                bubble.className = `chat-bubble ${type === 'in' ? 'bubble-in' : 'bubble-out'}`;
+                if(isHtml) bubble.innerHTML = text;
+                else bubble.textContent = text;
+                
+                const time = document.createElement('div');
+                time.className = 'chat-time';
+                time.textContent = 'Just now';
+
+                body.appendChild(bubble);
+                body.appendChild(time);
+                body.scrollTop = body.scrollHeight;
+            };
+
+            document.querySelectorAll('.quick-reply').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    const reply = e.target.getAttribute('data-reply');
+                    addMessage(reply, 'out');
+                    
+                    setTimeout(() => {
+                        if (reply === 'Hours?') {
+                            addMessage('We are open Monday through Friday, 5am – 7pm.', 'in');
+                        } else if (reply === 'Services?') {
+                            addMessage('We offer complete roof tear-offs, full deck replacements, new roof installations, and expert repairs.', 'in');
+                        } else if (reply === 'WhatsApp Us') {
+                            addMessage('<a href="https://wa.me/9313046119" target="_blank" style="text-decoration: underline; color: #25D366;">💬 Chat with us on WhatsApp!</a>', 'in', true);
+                        } else if (reply === 'Leave a Review') {
+                            addMessage('<a href="https://rhinoroofingcontractor.com" target="_blank" style="text-decoration: underline; color: #3b82f6;">Click here to leave a Google Review!</a>', 'in', true);
+                        }
+                    }, 600);
+                });
+            });
+
+            const handleSend = () => {
+                const val = input.value.trim();
+                if (val) {
+                    addMessage(val, 'out');
+                    input.value = '';
+                    setTimeout(() => {
+                        addMessage('Thanks for reaching out! A commercial roofing specialist will contact you shortly. For immediate assistance, please call 931-304-6119.', 'in');
+                    }, 1000);
+                }
+            };
+
+            submitBtn.addEventListener('click', handleSend);
+            input.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') handleSend();
+            });
+        } catch(e) { console.warn(e); }
+
+        // 7. Promo Popup
+        try {
+            const popup = document.getElementById('promoPopup');
+            const overlay = document.getElementById('promoOverlay');
+            const close = document.getElementById('promoClose');
+            
+            let popupShown = false;
+            const showPopup = () => {
+                if(!popupShown) {
+                    popup.classList.add('active');
+                    overlay.classList.add('active');
+                    popupShown = true;
+                }
+            };
+
+            setTimeout(showPopup, 8000); // Show after 8 seconds
+
+            document.addEventListener('mouseleave', (e) => {
+                if (e.clientY < 0) showPopup();
+            });
+
+            const closePopup = () => {
+                popup.classList.remove('active');
+                overlay.classList.remove('active');
+            };
+
+            close.addEventListener('click', closePopup);
+            overlay.addEventListener('click', closePopup);
+        } catch(e) { console.warn(e); }
+
+        // 8. Global Modal Close Safety
+        try {
+            document.body.addEventListener('click', e => { 
+                if(e.target.closest('.close-modal, .modal-close, .close, [aria-label="Close"]') || e.target.classList.contains('modal-overlay')) { 
+                    const m = e.target.closest('.modal, .popup, #popup, .fixed'); 
+                    if(m) m.style.display = 'none'; 
+                    else document.querySelectorAll('.modal, .popup, #popup').forEach(p=>p.style.display='none'); 
+                } 
+            });
+        } catch(e) { console.warn(e); }
+
+    </script>
+
+<script>
+/* ═══ SITEFLOW BULLETPROOF MOBILE MENU ═══ */
+(function() {
+  try {
+    // Find the hamburger button — try EVERY known selector
+    var hamburger = document.querySelector('.hamburger')
+      || document.querySelector('.menu-toggle')
+      || document.querySelector('.mobile-menu-btn')
+      || document.querySelector('.nav-toggle')
+      || document.querySelector('[class*="hamburger"]')
+      || document.querySelector('[class*="menu-btn"]')
+      || document.querySelector('[class*="menu-toggle"]')
+      || document.querySelector('button[aria-label*="menu" i]')
+      || document.querySelector('nav button');
+
+    // Find the mobile menu overlay — try EVERY known selector
+    var mobileMenu = document.querySelector('.mobile-menu')
+      || document.querySelector('.nav-menu')
+      || document.querySelector('.mobile-nav')
+      || document.querySelector('.menu-overlay')
+      || document.querySelector('[class*="mobile-menu"]')
+      || document.querySelector('[class*="mobile-nav"]')
+      || document.querySelector('[class*="nav-overlay"]');
+
+    // If the AI didn't create a mobile menu at all, BUILD ONE from the desktop nav links
+    if (hamburger && !mobileMenu) {
+      var navLinks = document.querySelectorAll('.nav-links a, .desktop-nav a, nav ul a, nav a:not(.logo):not([class*="logo"])');
+      if (navLinks.length > 0) {
+        mobileMenu = document.createElement('div');
+        mobileMenu.className = 'mobile-menu';
+        mobileMenu.style.cssText = 'position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.97);z-index:200;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1.5rem;transform:translateX(100%);transition:transform 0.3s ease;';
+        // Add close button
+        var closeBtn = document.createElement('button');
+        closeBtn.className = 'close-menu';
+        closeBtn.innerHTML = '<i class="fas fa-times" style="font-size:28px;color:white;"></i>';
+        closeBtn.style.cssText = 'position:absolute;top:20px;right:20px;background:none;border:none;cursor:pointer;z-index:201;';
+        mobileMenu.appendChild(closeBtn);
+        // Clone all nav links
+        navLinks.forEach(function(link) {
+          var clone = link.cloneNode(true);
+          clone.style.cssText = 'color:white;text-decoration:none;font-size:1.3rem;display:block;padding:0.75rem 0;';
+          mobileMenu.appendChild(clone);
+        });
+        document.body.appendChild(mobileMenu);
+      }
+    }
+
+    if (!hamburger || !mobileMenu) return;
+
+    // Remove any existing click handlers by cloning the hamburger
+    var newHamburger = hamburger.cloneNode(true);
+    hamburger.parentNode.replaceChild(newHamburger, hamburger);
+    hamburger = newHamburger;
+
+    function openMenu() {
+      mobileMenu.classList.add('active');
+      mobileMenu.style.transform = 'translateX(0)';
+      hamburger.innerHTML = '<i class="fas fa-times" style="font-size:28px;"></i>';
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeMenu() {
+      mobileMenu.classList.remove('active');
+      mobileMenu.style.transform = 'translateX(100%)';
+      hamburger.innerHTML = '<i class="fas fa-bars"></i>';
+      document.body.style.overflow = '';
+    }
+
+    hamburger.addEventListener('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      if (mobileMenu.classList.contains('active')) { closeMenu(); } else { openMenu(); }
+    });
+
+    // Close when clicking any link inside the mobile menu
+    mobileMenu.querySelectorAll('a').forEach(function(link) {
+      link.addEventListener('click', function() { closeMenu(); });
+    });
+
+    // Close when clicking any close button inside the menu
+    mobileMenu.querySelectorAll('.close-menu, .mobile-close, [class*="close"], button').forEach(function(btn) {
+      btn.addEventListener('click', function(e) {
+        e.preventDefault();
+        closeMenu();
+      });
+    });
+
+    // Close on Escape key
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && mobileMenu.classList.contains('active')) { closeMenu(); }
+    });
+
+  } catch(e) { console.error('[SiteFlow Menu]', e); }
+})();
+</script>
+
+<script>
+/* ═══ SITEFLOW: WRAP AI JAVASCRIPT IN SAFETY NET ═══ */
+/* If the AI's JS has bugs (open/closed badge, stats counter, etc.), */
+/* this ensures the menu and core features still work. */
+(function() {
+  try {
+    // Force remove any scroll-reveal opacity:0 from hero after 2 seconds
+    setTimeout(function() {
+      var hero = document.querySelector('.hero, #hero, section:first-of-type');
+      if (hero) {
+        hero.querySelectorAll('*').forEach(function(el) {
+          var style = window.getComputedStyle(el);
+          if (style.opacity === '0') {
+            el.style.opacity = '1';
+            el.style.transform = 'none';
+          }
+        });
+      }
+    }, 2000);
+
+    // Force fix: if preloader is STILL showing after 4 seconds, kill it
+    setTimeout(function() {
+      var preloader = document.querySelector('.preloader, #preloader, .loading-screen, .loader-overlay, [class*="preload"]');
+      if (preloader) {
+        preloader.style.opacity = '0';
+        preloader.style.pointerEvents = 'none';
+        setTimeout(function() { if (preloader.parentNode) preloader.parentNode.removeChild(preloader); }, 500);
+      }
+    }, 4000);
+
+    // Force dismiss promo popup on mobile — run AFTER the AI shows it (AI triggers at ~5s)
+    if (window.innerWidth <= 1024) {
+      // Strategy 1: Dismiss at 8 seconds (AI shows at 5s, so this gives 3s to see it)
+      setTimeout(function() {
+        var popups = document.querySelectorAll('.promo-popup, #promoPopup, [class*="promo-popup"]');
+        var overlays = document.querySelectorAll('.promo-overlay, [class*="promo-overlay"], [class*="popup-overlay"]');
+        popups.forEach(function(p) { p.classList.remove('active', 'show', 'visible'); p.style.opacity = '0'; p.style.pointerEvents = 'none'; });
+        overlays.forEach(function(o) { o.classList.remove('active', 'show', 'visible'); o.style.opacity = '0'; o.style.pointerEvents = 'none'; });
+      }, 8000);
+
+      // Strategy 2: Strip backdrop-filter blur from any overlay immediately
+      setTimeout(function() {
+        document.querySelectorAll('.promo-overlay, [class*="promo-overlay"], [class*="popup-overlay"]').forEach(function(el) {
+          el.style.backdropFilter = 'none';
+          el.style.webkitBackdropFilter = 'none';
+        });
+      }, 100);
+    }
+
+    // NUCLEAR GRID BUSTER — find ANY element using CSS grid with 2+ columns on mobile/tablet
+    // This catches patterns our CSS selectors might miss
+    if (window.innerWidth <= 1024) {
+      setTimeout(function() {
+        document.querySelectorAll('section, section > div, section > div > div').forEach(function(el) {
+          var style = window.getComputedStyle(el);
+          if (style.display === 'grid') {
+            var cols = style.gridTemplateColumns;
+            // If there are multiple column values (e.g., "400px 600px" or "1fr 1fr"), force to single column
+            if (cols && cols.split(' ').filter(function(c) { return c.trim() && c !== '0px'; }).length > 1) {
+              el.style.display = 'flex';
+              el.style.flexDirection = 'column';
+              // Force all children to full width
+              Array.from(el.children).forEach(function(child) {
+                child.style.width = '100%';
+              });
+            }
+          }
+        });
+      }, 500);
+    }
+
+    // Cap Google Maps iframe height on mobile
+    if (window.innerWidth <= 768) {
+      document.querySelectorAll('iframe[src*="google.com/maps"], iframe[src*="maps.google"]').forEach(function(iframe) {
+        iframe.style.height = '250px';
+        iframe.style.maxHeight = '250px';
+        iframe.style.width = '100%';
+        iframe.style.borderRadius = '16px';
+      });
+    }
+
+  } catch(e) { console.error('[SiteFlow Safety]', e); }
+})();
+</script>
+</body>
+</html>
